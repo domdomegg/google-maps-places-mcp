@@ -16,7 +16,7 @@ const outputSchema = z.object({
 
 export function registerPlacesPhotoGet(server: McpServer, config: Config): void {
 	server.registerTool(
-		'places_photo_get',
+		'photo_get',
 		{
 			title: 'Get Place Photo',
 			description: 'Get a photo URL for a place. Use the photo name from a text search response. At least one of maxHeightPx or maxWidthPx should be specified.',

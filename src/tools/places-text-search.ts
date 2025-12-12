@@ -118,7 +118,7 @@ const outputSchema = z.object({
 
 export function registerPlacesTextSearch(server: McpServer, config: Config): void {
 	server.registerTool(
-		'places_text_search',
+		'text_search',
 		{
 			title: 'Search Places',
 			description: 'Search for places using a text query. Returns place details including name, address, rating, opening hours, photos, and more.',
