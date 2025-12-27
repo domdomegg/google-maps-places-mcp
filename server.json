@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.domdomegg/google-maps-places-mcp",
   "title": "Google Maps Places",
   "description": "Allow AI systems to search for places and get business info via Google Maps Places API.",
