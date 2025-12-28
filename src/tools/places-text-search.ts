@@ -3,8 +3,9 @@ import type {McpServer} from '@modelcontextprotocol/sdk/server/mcp.js';
 import type {Config} from './types.js';
 import {makePlacesApiCall} from '../utils/places-api.js';
 import {jsonResult} from '../utils/response.js';
+import {strictSchemaWithAliases} from '../utils/schema.js';
 
-const inputSchema = {
+const inputSchema = strictSchemaWithAliases({
 	textQuery: z.string().describe('The text query to search for places (e.g., "pizza in New York" or "coffee shops near me")'),
 	languageCode: z.string().optional().describe('Language code for results (e.g., "en", "fr")'),
 	regionCode: z.string().optional().describe('Region code for result localization (e.g., "US", "GB")'),
@@ -34,7 +35,7 @@ const inputSchema = {
 			high: z.object({latitude: z.number(), longitude: z.number()}),
 		}),
 	}).optional().describe('Only return results within this area'),
-};
+}, {});
 
 // Place response schema
 const placeSchema = z.object({
