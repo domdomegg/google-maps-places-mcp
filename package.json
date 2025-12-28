@@ -1,6 +1,6 @@
 {
   "name": "google-maps-places-mcp",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "MCP server for Google Maps Places API - search for places, get details and photos",
   "license": "MIT",
   "author": "Adam Jones (domdomegg)",
